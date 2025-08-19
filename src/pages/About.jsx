@@ -8,9 +8,9 @@ export default function About() {
           </h2>
           <p className="text-gray-300 text-lg leading-relaxed">
             BitBridge is a community-powered gateway into the new financial world —
-            built for thinkers, builders, and hustlers in Africa and beyond. 
+            built for thinkers, builders, and entrepreneurs in Africa and beyond. 
             We explore real money stories, blockchain truths, and the tools to 
-            create wealth without selling your soul.
+            create wealth through alignment.
           </p>
         </div>
       </div>

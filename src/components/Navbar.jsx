@@ -14,9 +14,6 @@ export default function Navbar() {
     <Link to="/" className="hover:text-gold">Home</Link>
   </li>
   <li>
-    <Link to="/blog" className="hover:text-gold cursor-pointer">Blog</Link>
-  </li>
-  <li>
     <Link to="/podcast" className="hover:text-gold">Podcast</Link>
   </li>
   <li>
