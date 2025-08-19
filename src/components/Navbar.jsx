@@ -1,26 +1,22 @@
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo_light.png';
-
+import { useState } from 'react';
+ 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 flex justify-between items-center px-6 py-4 bg-background border-b border-gold">
-      <Link to="/" className="flex items-center space-x-2">
-  <img src={logo} alt="BitBridge Logo" className="w-8 h-8 object-contain" />
-  <span className="text-gold font-bold text-xl">BitBridge</span>
-</Link>
+    <nav className="bg-[#111] text-white px-6 py-4 flex justify-between items-center relative">
+      {/* Logo on the left */}
+      <div className="text-2xl font-bold text-gold">BitBridge</div>
 
-      <ul className="flex space-x-6 text-sm">
-  <li>
-    <Link to="/" className="hover:text-gold">Home</Link>
-  </li>
-  <li>
-    <Link to="/podcast" className="hover:text-gold">Podcast</Link>
-  </li>
-  <li>
-    <Link to="/join" className="hover:text-gold">Join</Link>
-  </li>
-</ul>
+      {/* Links on the right */}
+      <div className="flex gap-6">
+        <Link to= "/" className="hover:text-gold transition">Home</Link>
+        <Link to="/about" className="hover:text-gold transition">About</Link>
+        <Link to="/podcast" className="hover:text-gold transition">Podcast</Link>
+        <Link to ="/donate" className="hover:text-gold transition">Donate</Link>
+      </div>
     </nav>
   );
 }
+
 
