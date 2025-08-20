@@ -25,6 +25,9 @@ app.post("/api/donate", (req, res) => {
   });
 });
 
+const donateRoutes = require("./routes/donate");
+app.use("/api/donate", donateRoutes);
+
 // Start server
 app.listen(PORT, () => {
   console.log(`✅ Server running at http://localhost:${PORT}`);
