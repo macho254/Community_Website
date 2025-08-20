@@ -18,7 +18,7 @@ export default function Footer() {
         {/* Social media icons */}
         <div className="flex space-x-6 text-xl">
           <a
-            href="https://t.me/yourTelegramLink"
+            href="https://t.me/+bjFSNwZJFZY4MGNk"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gold transition hover:translate-y-1"
@@ -26,7 +26,7 @@ export default function Footer() {
             <FaTelegramPlane />
           </a>
           <a
-            href="https://x.com/yourXHandle"
+            href="https://x.com/Maore_Antony?t=JTvi4QNXrPGGVVRaITd2Jg&s=09"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gold transition hover:translate-y-1"
@@ -34,7 +34,7 @@ export default function Footer() {
             <FaXTwitter />
           </a>
           <a
-            href="https://linkedin.com/in/yourLinkedIn"
+            href="https://www.linkedin.com/in/maore-antony%E2%9A%A1-600130240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gold transition hover:translate-y-1"
@@ -42,7 +42,7 @@ export default function Footer() {
             <FaLinkedin />
           </a>
           <a
-            href="https://tiktok.com/@yourTikTok"
+            href="https://www.tiktok.com/@maore_antony?_t=ZM-8z2JGjCXs6Y&_r=1"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gold transition hover:translate-y-1"

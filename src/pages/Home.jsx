@@ -8,7 +8,7 @@ export default function Home() {
       </h1>
       <p className="text-lg md:text-xl text-gray-300 max-w-2xl mb-6">
         BitBridge is a modern, community-driven tech-financial platform to make sense of money, technology, and life.
-        Join us as we decode money, tech, and life — one transmission at a time.
+        Join us as we decode money, tech, crypto, capital markets, pre-ipo on Africa start-ups and life — one transmission at a time.
       </p>
       <a
         href="https://t.me/+bjFSNwZJFZY4MGNk"
