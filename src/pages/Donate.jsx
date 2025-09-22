@@ -1,53 +1,37 @@
-<<<<<<< HEAD
-// function Donate() {
-//   return (
-//     <section className="py-15 px-5 max-w-3xl  mx-auto text-center bg-[#111] rounded-2xl shadow-lg border border-gold/20 p-8 text-center">   
-//       <h2 className="text-3xl font-bold  mb-4">Support <span className="text-gold" >BitBridge</span></h2>
-//       <p className="text-gray-300 mb-6">
-//         Help us grow the movement. Donations keep this project community-driven and independent.
-//       </p>
-//       <button className="bg-gold text-black px-6 py-3 rounded-lg font-bold hover:bg-yellow-500">
-//         Donate Now
-//       </button>
-//     </section>
-//   );
-// }
-// export default Donate;
-  
-import { useState } from "react";
-
-export default function Donate() {
-  const [amount, setAmount] = useState("");
-  const [showOptions, setShowOptions] = useState(false);
-
-  const handleDonateNow = () => {
-    if (!amount || isNaN(amount)) {
-      alert("Please enter a valid amount");
-      return;
-    }
-    setShowOptions(true);
-  };
-
-  const handlePayment = async (method) => {
-    try {
-      const response = await fetch("http://localhost:5000/api/donate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ amount, method }), // ✅ send amount + method
-      });
-
-      const data = await response.json();
-      if (data.success) {
-      alert(`Payment successful via ${method}`);
-    } else {
-      alert("Payment failed: " + data.message);
-    }
-    } catch (error) {
-      console.error(error);
-      alert("Payment failed. Try again.");
-    }
-=======
 // import { useState } from "react";
+
+// export default function Donate() {
+//   const [amount, setAmount] = useState("");
+//   const [showOptions, setShowOptions] = useState(false);
+
+//   const handleDonateNow = () => {
+//     if (!amount || isNaN(amount)) {
+//       alert("Please enter a valid amount");
+//       return;
+//     }
+//     setShowOptions(true);
+//   };
+
+//   const handlePayment = async (method) => {
+//     try {
+//       const response = await fetch("http://localhost:5000/api/donate", {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         body: JSON.stringify({ amount, method }), // ✅ send amount + method
+//       });
+
+//       const data = await response.json();
+//       if (data.success) {
+//       alert(`Payment successful via ${method}`);
+//     } else {
+//       alert("Payment failed: " + data.message);
+//     }
+//     } catch (error) {
+//       console.error(error);
+//       alert("Payment failed. Try again.");
+//     }
+// =======
+// // import { useState } from "react";
 
 // export default function Donate() {
 //   const [amount, setAmount] = useState("");
@@ -134,60 +118,14 @@ export default function Donate() {
   const handleDonate = () => {
     // Redirect to Buy Me a Coffee (or any donation link)
     window.open("https://www.buymeacoffee.com/bitbridge", "_blank");
->>>>>>> 8766720c8a6d0d11b58293d1fd5133a84d447bfa
   };
 
   return (
     <section className="flex flex-col items-center justify-center  text-white">
-<<<<<<< HEAD
-      <div className="bg-[#111] rounded-2xl shadow-lg border border-gold/20 p-8 text-center">
-        <h2 className="text-3xl font-bold  mb-4">Support <span className="text-gold" >BitBridge</span></h2>
-      <p className="text-gray-300 mb-6">
-         Help us grow the movement. Donations keep this project community-driven and independent.
-      </p>
-        <input 
-          type="number"
-          placeholder="Enter amount"
-          value={amount}
-          onChange={(e) => setAmount(e.target.value)}
-          className="p-2 rounded text-black mb-4 w-full"
-        />
-        <button
-          onClick={handleDonateNow}
-          className="bg-gold text-black px-6 py-2 rounded-lg hover:bg-yellow-500"
-        >
-          Donate Now
-        </button>
-
-        {showOptions && (
-          <div className="mt-6 flex gap-4 justify-center">
-            <button
-              onClick={() => handlePayment("mpesa")}
-              className="bg-green-600 px-4 py-2 rounded-lg hover:bg-green-700"
-            >
-              M-Pesa
-            </button>
-            <button
-              onClick={() => handlePayment("bitcoin")}
-              className="bg-orange-500 px-4 py-2 rounded-lg hover:bg-orange-600"
-            >
-              Bitcoin
-            </button>
-            <button
-              onClick={() => handlePayment("paypal")}
-              className="bg-blue-600 px-4 py-2 rounded-lg hover:bg-blue-700"
-            >
-              PayPal
-            </button>
-          </div>
-        )}
-      </div>
-    </section>
-=======
     <div className="bg-[#111] rounded-2xl shadow-lg border border-gold/20 p-8 text-center">
           <h2 className="text-3xl font-bold  mb-4">Support <span className="text-gold" >BitBridge</span></h2>
       <p className="text-gray-300 mb-6">
-         Donations keep this project community-driven and independent.
+         Donations keep this  Community-driven & Independent.
       </p>
           <button
       onClick={handleDonate}
@@ -198,6 +136,6 @@ export default function Donate() {
     </div>
     </section>
     
->>>>>>> 8766720c8a6d0d11b58293d1fd5133a84d447bfa
+
   );
 }

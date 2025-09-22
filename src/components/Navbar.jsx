@@ -1,24 +1,3 @@
-// import { Link } from 'react-router-dom';
-// import logo from '../assets/logo_.png';
-// import { useState } from 'react';
- 
-// export default function Navbar() {
-//   return (
-//     <nav className="bg-[#111] text-white px-6 py-4 flex justify-between items-center relative">
-//       {/* Logo on the left */}
-//       <div className="text-2xl font-bold text-gold">BitBridge</div>
-
-//       {/* Links on the right */}
-//       <div className="flex gap-6">
-//         <Link to= "/" className="hover:text-gold transition">Home</Link>
-//         <Link to="/about" className="hover:text-gold transition">About</Link>
-//         <Link to="/podcast" className="hover:text-gold transition">Podcast</Link>
-//         <Link to ="/donate" className="hover:text-gold transition">Donate</Link>
-//       </div>
-//     </nav>
-//   );
-// }
- // src/components/Navbar.jsx
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -44,7 +23,8 @@ export default function Navbar() {
           <Link to="/" className="hover:text-yellow-400">Home</Link>
           <Link to="/about" className="hover:text-yellow-400">About</Link>
           <Link to="/podcast" className="hover:text-yellow-400">Podcast</Link>
-          <Link to="/donate" className="hover:text-yellow-400">Donate</Link>
+          <Link to="/projects" className="hover:text-yellow-400">Projects</Link>
+          {/* <Link to="/donate" className="hover:text-yellow-400">Donate</Link> */}
         </div>
 
         {/* Mobile Toggle */}
@@ -69,7 +49,8 @@ export default function Navbar() {
             <Link to="/" onClick={handleLinkClick} className="hover:text-yellow-400">Home</Link>
             <Link to="/about" onClick={handleLinkClick} className="hover:text-yellow-400">About</Link>
             <Link to="/podcast" onClick={handleLinkClick} className="hover:text-yellow-400">Podcast</Link>
-            <Link to="/donate" onClick={handleLinkClick} className="hover:text-yellow-400">Donate</Link>
+            <Link to="/projects" onClick={handleLinkClick} className="hover:text-yellow-400">Projects</Link>
+            {/* <Link to="/donate" onClick={handleLinkClick} className="hover:text-yellow-400">Donate</Link> */}
           </motion.div>
         )}
       </AnimatePresence>

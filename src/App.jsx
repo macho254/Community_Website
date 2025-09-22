@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Podcast from "./pages/Podcast";
 import Donate from "./pages/Donate";
+import Projects  from "./pages/Projects";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/podcast" element={<Podcast />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/donate" element={<Donate />} />
           </Routes>
         </main>

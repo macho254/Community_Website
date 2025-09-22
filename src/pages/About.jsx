@@ -7,10 +7,8 @@ export default function About() {
             What is <span className="text-gold">BitBridge</span>?
           </h2>
           <p className="text-gray-300 text-lg leading-relaxed">
-            BitBridge is a community-powered gateway into the new financial world —
-            built for thinkers, builders, and entrepreneurs in Africa and beyond. 
-            We explore real money stories, blockchain truths, and the tools to 
-            create wealth through alignment.
+            BitBridge is a Community-powered Gateway into the  Financial world —
+            Built for Thinkers, Builders, Entrepreneurs in Africa & beyond. 
           </p>
         </div>
       </div>
